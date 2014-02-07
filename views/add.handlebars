@@ -2,6 +2,8 @@
 
 <html>
 <head>
+	<a href = "/"> Friend added.  Go back.  </a>
+
 	<title>My HCI Friends</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +26,13 @@
 		<h3> Imaginary Friend </h3>
 		Still cooler than me.
 
-	{{#each friends}}
-      <div class="friends">
+	{{#each data}}
+      <div class="data">
       <h3>	<a href="#" class = "listener">
         	 {{name}} </h3>
         </a>
           <img src="{{imageURL}}" class="img-responsive">
-          <p>{{description}}</p>
+          <p>{{discription}}</p>
       </div>
     {{/each}}
 		<form id="addFriendForm" role="form" method="get" action="/add">
