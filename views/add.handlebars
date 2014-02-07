@@ -26,13 +26,13 @@
 		<h3> Imaginary Friend </h3>
 		Still cooler than me.
 
-	{{#each data}}
-      <div class="data">
+	{{#each friends}}
+      <div class="friends">
       <h3>	<a href="#" class = "listener">
         	 {{name}} </h3>
         </a>
           <img src="{{imageURL}}" class="img-responsive">
-          <p>{{discription}}</p>
+          <p>{{description}}</p>
       </div>
     {{/each}}
 		<form id="addFriendForm" role="form" method="get" action="/add">
